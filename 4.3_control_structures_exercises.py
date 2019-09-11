@@ -48,3 +48,14 @@ n = 100
 while n >= -10:
 print(n)
     n-=5
+## D Create a while loop that starts at 2, and displays the number squared on each 
+#line while the number is less than 1,000,000. Output should equal:
+n = 2
+while n <= 1000000:
+    print (n)
+    n**=2
+##E
+n= 100
+while n >= 5:
+    print (n)
+    n -=5
