@@ -27,7 +27,7 @@ else:
     total = 40 * rate + (hours - 40) * (1.5 * rate)
 
 # 2. Loop Basics
-#Create an integer variable i with a value of 5.
+# A  Create an integer variable i with a value of 5.
 #Create a while loop that runs so long as i is less than or equal to 15
 #Each loop iteration, output the current value of i, then increment i by one.
 
@@ -35,3 +35,16 @@ i = 5
 while i <= 15:
 print(i)
     i += 1
+
+##B   Create a while loop that will count by 2's starting with 0 and ending at 100. 
+#Follow each number with a new line.
+n = 0
+while n<= 100:
+print(n)
+    n +=2
+##C Alter your loop to count backwards by 5's from 100 to -10.
+
+n = 100 
+while n >= -10:
+print(n)
+    n-=5
