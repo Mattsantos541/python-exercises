@@ -54,13 +54,13 @@ True or "42"
 [] + [] == []= True
 {} + {}= error
 
-
+#########No need for lists
 #1 You have rented some movies for your kids: The 
 # little mermaid (for 3 days), Brother Bear (for 
 # 5 days, they love it), and Hercules (1 day, you don't 
 # know yet if they're going to like it). If price for a 
 # movie per day is 3 dollars, how much will you have to pay?
-
+#####No need for lists
 Movies= [
 
 {"Movie":"Little Mermaid", "Rental": 3, "preference":"Do no know if they like it"},
