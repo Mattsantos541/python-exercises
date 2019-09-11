@@ -71,10 +71,8 @@ Movies= [
 #########If price for a movie per day is 3 dollars, 
 # how much will you have to pay?
 
-total = 0
-for x in Movies:
-    total = x["Rental"] *3
-print (total)
+for movie in movies:
+    movie = movie *3
 
 ####Suppose you're working as a contractor for 3 companies: Google, Amazon and 
 # Facebook, they pay you a different rate per hour. Google pays 400 dollars per hour, 
@@ -117,3 +115,4 @@ len(password)<= 20
 ##the password must not be the same as the username
 
 username != password
+
