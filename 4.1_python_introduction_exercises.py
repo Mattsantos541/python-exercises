@@ -106,7 +106,7 @@ password = 'notastrongpassword'
 
 ##the password must be at least 5 characters
 
-len(username)>=5
+password_greater_5 = len(username) >=5
 
 ##the username must be no more than 20 characters
 
@@ -115,4 +115,6 @@ len(password)<= 20
 ##the password must not be the same as the username
 
 username != password
+
+##neither can have white space
 
