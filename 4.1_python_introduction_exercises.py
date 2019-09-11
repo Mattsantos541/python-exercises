@@ -68,8 +68,52 @@ Movies= [
 {"Movie":"Herceules", "Rental": 1, "preference":"Do not know if they like it"}
 ]
 
-##If price for a movie per day is 3 dollars, 
+#########If price for a movie per day is 3 dollars, 
 # how much will you have to pay?
-Total_Spent= 0  
-for x in Movies: 
-    Total_Spent = x["Rental"] * 3
+
+total = 0
+for x in Movies:
+    total = x["Rental"] *3
+print (total)
+
+####Suppose you're working as a contractor for 3 companies: Google, Amazon and 
+# Facebook, they pay you a different rate per hour. Google pays 400 dollars per hour, 
+# Amazon 380, and Facebook 350. How much will you receive in payment for this week? 
+# You worked 10 hours for Facebook, 6 hours for Google and 4 hours for Amazon.
+
+
+Big_Three= [
+    {"Company": "Facebook", "Salary": 350, "Hours": 10},
+    {"Company": "Amazon", "Salary": 380, "Hours": 4},
+    {"Company": "Google", "Salary": 400, "Hours": 6}
+]
+
+wage = 0
+shift= 0
+for x in Big_Three:
+    wage += x("Salary") * x("Hours")
+print(wage)
+
+
+###A student can be enrolled to a class only if the class is not full and the class 
+# schedule does not conflict with her current schedule.
+
+
+###A product offer can be applied only if people buys more than 2 items, and the 
+# offer has not expired. Premium members do not need to buy a specific amount of products.
+
+
+username = 'codeup'
+password = 'notastrongpassword'
+
+##the password must be at least 5 characters
+
+len(username)>=5
+
+##the username must be no more than 20 characters
+
+len(password)<= 20
+
+##the password must not be the same as the username
+
+username != password
