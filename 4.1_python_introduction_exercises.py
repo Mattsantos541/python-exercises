@@ -61,13 +61,12 @@ True or "42"
 # know yet if they're going to like it). If price for a 
 # movie per day is 3 dollars, how much will you have to pay?
 #####No need for lists
-Movies= [
+little_mermaid= 3 
+Brother_Bear= 5
+Hercules= 1
 
-{"Movie":"Little Mermaid", "Rental": 3, "preference":"Do no know if they like it"},
-{"Movie":"Brother Bear", "Rental": 5, "preference":"Kids Love it"},
-{"Movie":"Herceules", "Rental": 1, "preference":"Do not know if they like it"}
-]
-
+Total_rental= (little_mermaid + Brother_Bear + Hercules) *3
+print (Total_rental)
 #########If price for a movie per day is 3 dollars, 
 # how much will you have to pay?
 

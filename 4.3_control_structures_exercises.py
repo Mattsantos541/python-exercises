@@ -59,3 +59,11 @@ n= 100
 while n >= 5:
     print (n)
     n -=5
+
+### For Loops
+#Write some code that prompts the user for a number, then shows a multiplication 
+#table up through 10 for that number.
+
+n= input("Enter a Number")
+for i in range(1, 11):
+   print(n,'x',i,'=',num*i)
