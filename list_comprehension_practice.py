@@ -18,12 +18,12 @@ for fruit in fruits:
     
 # Exercise 1 - rewrite the above example code using list comprehension syntax. Make a variable named 
 # uppercased_fruits to hold the output of the list comprehension. Output should be ['MANGO', 'KIWI', etc...]
-uppercased_fruits= []
-for fruit in fruits:
-    uppercased_fruits.append(fruit.upper())
-print (uppercased_fruits)
+uppercased_fruits = [fruit.upper() for fruit in fruits]
+print(uppercased_fruits)
 # Exercise 2 - create a variable named capitalized_fruits and use list comprehension syntax to produce 
 ## output like ['Mango', 'Kiwi', 'Strawberry', etc...]
+capitalized_fruits = [fruit.capitalize() for fruit in fruits]
+print (capitalized_fruits)
 
 # Exercise 3 - Use a list comprehension to make a variable named fruits_with_more_than_two_vowels. Hint: 
 ## You'll need a way to check if something is a vowel.
