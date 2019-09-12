@@ -75,6 +75,8 @@ for i in range(1, 11):
 # (Hint: use the isdigit method on strings to determine this). Use a loop and the 
 # continue statement to output all the odd numbers between 1 and 50, except for the 
 # number the user entered.
+
+#################################odd_num= ""
 while True:
     try:
         x = int(input('Enter your number: '))
