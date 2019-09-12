@@ -70,35 +70,42 @@ print (Total_rental)
 #########If price for a movie per day is 3 dollars, 
 # how much will you have to pay?
 
-for movie in movies:
-    movie = movie *3
-
 ####Suppose you're working as a contractor for 3 companies: Google, Amazon and 
 # Facebook, they pay you a different rate per hour. Google pays 400 dollars per hour, 
 # Amazon 380, and Facebook 350. How much will you receive in payment for this week? 
 # You worked 10 hours for Facebook, 6 hours for Google and 4 hours for Amazon.
 
+FB = 350
+A = 380
+Goog = 400
 
-Big_Three= [
-    {"Company": "Facebook", "Salary": 350, "Hours": 10},
-    {"Company": "Amazon", "Salary": 380, "Hours": 4},
-    {"Company": "Google", "Salary": 400, "Hours": 6}
-]
+Salary = (FB *10)+(A *4)+(Goog * 6)
 
-wage = 0
-shift= 0
-for x in Big_Three:
-    wage += x("Salary") * x("Hours")
-print(wage)
-
+print (Salary)
 
 ###A student can be enrolled to a class only if the class is not full and the class 
 # schedule does not conflict with her current schedule.
+Students = ("not")
+schedule = ("open")
+
+if Students == ("not") and schedule == ("open"):
+  print ("can sign up for class")
+else:
+  print ("not available")
 
 
 ###A product offer can be applied only if people buys more than 2 items, and the 
 # offer has not expired. Premium members do not need to buy a specific amount of products.
 
+purchase= 1
+offer= "active"
+premium = "no"
+if premium == "yes" and offer== "active":
+  print ("Offer is valid")
+elif purchase > 2 and offer == "active":
+  print ("offer is valid")
+else:
+  print ("offer is no good")
 
 username = 'codeup'
 password = 'notastrongpassword'
