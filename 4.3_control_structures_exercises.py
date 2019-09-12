@@ -111,3 +111,17 @@ if N >0:
 #One of the most common interview questions for entry-level programmers is the 
 # FizzBuzz test. Developed by Imran Ghory, the test is designed to test basic 
 # looping and conditional logic skills.
+
+##Write a program that prints the numbers from 1 to 100.
+
+for fizzbuzz in range(100):
+    if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
+        print("fizzbuzz")
+        continue
+    elif fizzbuzz % 3 == 0:
+        print("fizz")
+        continue
+    elif fizzbuzz % 5 == 0:
+        print("buzz")
+        continue
+    print(fizzbuzz)
