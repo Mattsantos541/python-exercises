@@ -66,4 +66,48 @@ while n >= 5:
 
 n= input("Enter a Number")
 for i in range(1, 11):
-   print(n,'x',i,'=',num*i)
+   print(n,'x',i,'=',n*i)
+#2- Create a for loop that uses print to create the output shown below
+
+
+##C- Prompt the user for an odd number between 1 and 50. Use a loop and a break 
+# statement to continue prompting the user if they enter invalid input. 
+# (Hint: use the isdigit method on strings to determine this). Use a loop and the 
+# continue statement to output all the odd numbers between 1 and 50, except for the 
+# number the user entered.
+while True:
+    try:
+        x = int(input('Enter your number: '))
+    except ValueError:
+        print ('That is not a number! Try again!')
+    if x in [1, 2]:
+        break
+
+while True:
+  try:
+      number= int(input("Enter an odd number "))
+  except ValueError:
+    print ("Not an odd number, try again")
+  for x in number:
+    if x%2==1
+
+
+## DThe input function can be used to prompt for input and use that input in your 
+# python code. Prompt the user to enter a positive number and write a loop that 
+# counts from 0 to that number. (Hints: first make sure that the value the user 
+# entered is a valid number, also note that the input function returns a string, 
+# so you'll need to convert this to a numeric type.)
+N= int(input("Enter a number "))
+if N >0:
+ for x in range(N):
+   print 
+
+## E. Write a program that prompts the user for a positive integer. Next write a 
+# loop that prints out the numbers from the number the user entered down to 
+
+
+
+##Fizzbuzz
+#One of the most common interview questions for entry-level programmers is the 
+# FizzBuzz test. Developed by Imran Ghory, the test is designed to test basic 
+# looping and conditional logic skills.
