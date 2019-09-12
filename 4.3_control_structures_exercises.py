@@ -149,3 +149,34 @@ for count in range (start, N):
 print ("numbers: ",numbers)
 print ("squares: ",squares)
 print ("cubes  : ",cubes)
+
+
+#Convert given number grades into letter grades.
+
+##Prompt the user for a numerical grade from 0 to 100.
+#Display the corresponding letter grade.
+#Prompt the user to continue.
+#Assume that the user will enter valid integers for the grades.
+#The application should only continue if the user agrees to.
+#Grade Ranges:
+
+#A : 100 - 88
+#B : 87 - 80
+#C : 79 - 67
+#D : 66 - 60
+#F : 59 - 0
+#Bonus
+
+#Edit your grade ranges to include pluses and minuses (ex: 99-100 = A+).
+
+Grade = int(input("enter a grade ")
+if 88 <= Grade <= 100:
+  print ("A")
+elif 80 <= Grade <= 87:
+  print ("B")
+elif 67 (Grade) <= 79:
+  print ("C")
+elif 60 <= Grade <= 66:
+  print ("D")
+else:
+  print("F")
