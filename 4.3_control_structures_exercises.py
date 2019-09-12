@@ -125,3 +125,25 @@ for fizzbuzz in range(100):
         print("buzz")
         continue
     print(fizzbuzz)
+#Display a table of powers.
+
+#Prompt the user to enter an integer.
+#Display a table of squares and cubes from 1 to the value entered.
+#Ask if the user wants to continue.
+#Assume that the user will enter valid data.
+#Only continue if the user agrees to.
+N= int(input("enter a number "))
+numbers = []
+squares = []
+cubes = []
+
+start= 1
+
+for count in range (start, N):
+  numbers.append (count)
+  squares.append (count**2)
+  cubes.append (count**3)
+
+print ("numbers: ",numbers)
+print ("squares: ",squares)
+print ("cubes  : ",cubes)
