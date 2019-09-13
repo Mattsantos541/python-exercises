@@ -64,6 +64,8 @@ final_price = (original_price - discount_amount)
 
 print(final_price)
 
+
+
 ##7Define a function named handle_commas. It should accept a string that is a number that contains commas in it as input, and return a number as output.
 def handle_commas(number):
   for x in number:
@@ -93,3 +95,5 @@ def remove_vowels(L):
             print (L)
 
 ##10Define a function named normalize_name. It should accept a string and return a valid python identifier, that is:
+
+#11Write a function named cumsum that accepts a list of numbers and returns a list that is the cumulative sum of the numbers in the list.
