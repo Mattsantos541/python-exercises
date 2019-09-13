@@ -54,3 +54,27 @@ tip_percent = (float(input("How much would you like to tip? (0-1)")))
 
 tip_amount= (tip_percent * total_bill)
 print(total_bill + tip_amount)
+
+##6 Define a function named apply_discount. It should accept a original price, and a discount percentage, and return the price after the discount is applied.
+def apply_discount(original_price, discount):
+  discount_amount = (original_price * discount)
+  return discount_amount
+
+final_price = (original_price - discount_amount)
+
+print(final_price)
+
+##7Define a function named handle_commas. It should accept a string that is a number that contains commas in it as input, and return a number as output.
+
+##Define a function named get_letter_grade. It should accept a number and return the letter grade associated with that number (A-F)
+def get_letter_grade(test):
+    if 88 <= test <= 100:
+      print ("A")
+    elif 80 <= test <= 87:
+      print ("B")
+    elif 67 <= test <= 79:
+      print ("C")
+    elif 60 <= test <= 66:
+      print ("D")
+    else:
+      print("F")
