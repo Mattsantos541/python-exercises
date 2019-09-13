@@ -78,3 +78,14 @@ def get_letter_grade(test):
       print ("D")
     else:
       print("F")
+
+##9Define a function named remove_vowels that accepts a string and returns a string with all the vowels removed.
+def remove_vowels(L):
+    letter=[]
+    for x in L:
+        if x=="aeiouAEIOU":
+            L.remove(x)
+            return L
+            print (L)
+
+##10Define a function named normalize_name. It should accept a string and return a valid python identifier, that is:
