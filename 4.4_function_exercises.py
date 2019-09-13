@@ -65,7 +65,11 @@ final_price = (original_price - discount_amount)
 print(final_price)
 
 ##7Define a function named handle_commas. It should accept a string that is a number that contains commas in it as input, and return a number as output.
-
+def handle_commas(number):
+  for x in number:
+    x.remove(",")
+    return number
+    print(number)
 ##Define a function named get_letter_grade. It should accept a number and return the letter grade associated with that number (A-F)
 def get_letter_grade(test):
     if 88 <= test <= 100:
