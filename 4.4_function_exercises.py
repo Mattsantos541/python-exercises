@@ -43,3 +43,14 @@ def Capital(word):
 
     print(Captial("Apple"))
     print(Capital("Mango"))
+##5 Define a function named calculate_tip. It should accept a tip percentage (a number between 0 and 1) and the bill total, and return the amount to tip.
+def calculate_tip(check_amount, tip):
+    tip_amount = total_bill * (tip_percent/100)
+    return tip_amount
+
+#Input amount
+total_bill = (float(input("What was the total of your bill with tax?")))
+tip_percent = (float(input("How much would you like to tip? (0-1)"))) 
+
+tip_amount= (tip_percent * total_bill)
+print(total_bill + tip_amount)
