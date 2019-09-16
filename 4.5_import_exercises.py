@@ -18,3 +18,13 @@ from itertools import combinations(list_1, list_2), 2)
 from itertools import combinations
 list= ['a', 'b', 'c', 'd']
 print(combinations(list), 2)
+
+import json
+with open('profiles.json') as f:
+
+    profiles
+type(profiles)
+type(profiles[0])
+
+
+#Total number of users
