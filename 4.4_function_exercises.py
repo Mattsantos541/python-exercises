@@ -97,3 +97,12 @@ def remove_vowels(L):
 ##10Define a function named normalize_name. It should accept a string and return a valid python identifier, that is:
 
 #11Write a function named cumsum that accepts a list of numbers and returns a list that is the cumulative sum of the numbers in the list.
+def cum_sum(nums):
+    total = 0
+    cumsum = []
+    for num in nums:
+       total += num
+       cumsum.append(total)
+    return cumsum
+
+    assert cum_sum(1)== [1, 2, 3]
