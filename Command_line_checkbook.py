@@ -2,14 +2,15 @@
 
 ##Greet on opening
 name= input( "Welcome, may i get your name? ")
-print('Hello ' + str(name) +' What can I do for you? ' )
-def checking_options():
-  print ("What can I do for you today? ")
-  print([
+print('Hello ' + str(name))
+print('\n                                   ')
+print ("What can I do for you today? ")
+print('\n')
+options= ([
     "1. Balance",
     "2. Deposit",
     "3. Withdrawl",
     "4. End Session"
   ])
-
-checking_options()
+while True:
+  choice = input("1. Balance 2. Deposit 3. Withdrawl 4. End Session. [1/2/3/4]")
