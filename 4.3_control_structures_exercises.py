@@ -187,3 +187,21 @@ elif 60 <= Grade <= 66:
   print ("D")
 else:
   print("F")
+
+#Create a list of dictionaries where each dictionary represents a book that you have read. Each dictionary in the list should have the keys title, author, and genre. Loop through the list and print out information about each book.
+#Prompt the user to enter a genre, then loop through your books list and print out the titles of all the books in that genre. """
+
+book_list=[{'title':"Lamb",'author':"Christopher Moore",'genre':"fiction"},
+{'title':"The Lean Startup",'author':"Eric Ries",'genre':"business"},{'title':"Devil in a White City",'author':"Eric Larson",'genre':"True Crime"},{'title':"Tom Sawyer",'author':"Mark Twain",'genre':"fiction"}]
+for book in book_list:
+    print("The book title is: "+book['title'])
+    print("The book author is: "+book['author'])
+    print("The book genre is: "+book['genre'])
+
+
+#Exercise 6.a
+genre_filter=input("Please enter a genre")
+for book in book_list:
+    if book['genre']==genre_filter:
+        print("The book title is: "+book['title'])
+        print("The book author is: "+book['author'])
