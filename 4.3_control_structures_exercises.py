@@ -106,6 +106,13 @@ if N >0:
 
 ## E. Write a program that prompts the user for a positive integer. Next write a 
 # loop that prints out the numbers from the number the user entered down to 
+for i in range(0,102,2):
+    print(i)
+
+i=0    
+while i<=100:
+    print(i)
+    i+=2
 
 
 
