@@ -156,3 +156,19 @@ for row in b:
         if(number % 2 == 0):
             evens_in_b.append(number)
 print(evens_in_b)
+
+# Exercise 9 - print out the shape of the array b.
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+
+np.shape(b)
+
+# Exercise 10 - transpose the array b.
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+
+np.transpose(b)
