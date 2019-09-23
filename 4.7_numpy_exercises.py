@@ -110,3 +110,37 @@ b = np.array([
 )
 max_of_b = max(b[0]) if max(b[0]) >= max(b[1]) else max(b[1])
 print(max_of_b)
+
+# Exercise 4 - refactor the following using numpy to find the mean of b
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+
+mean_of_b = (sum(b[0]) + sum(b[1])) / (len([b[0]]) + len(b[1]))
+
+print(mean_of_b)
+
+# Exercise 5 - refactor the following to use numpy for calculating the product of all numbers multiplied together.
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+product_of_b = 1
+for row in b:
+    for number in row:
+        product_of_b *= number
+        
+print(product_of_b)
+
+# Exercise 6 - refactor the following to use numpy to find the list of squares 
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+squares_of_b = []
+for row in b:
+    for number in row:
+        squares_of_b.append(number**2)
+        
+print(squares_of_b)
