@@ -144,3 +144,15 @@ for row in b:
         squares_of_b.append(number**2)
         
 print(squares_of_b)
+
+# Exercise 8 - refactor the following to use numpy to filter only the even numbers
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+evens_in_b = []
+for row in b:
+    for number in row:
+        if(number % 2 == 0):
+            evens_in_b.append(number)
+print(evens_in_b)
