@@ -172,3 +172,104 @@ b = np.array([
 )
 
 np.transpose(b)
+# Exercise 11 - reshape the array b to be a single list of 6 numbers. (1 x 6)
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+
+np.reshape(b, (1, 6))
+
+# Exercise 12 - reshape the array b to be a list of 6 lists, each containing only 1 number (6 x 1)
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+
+np.reshape(b, (1, 6))
+
+#Part 3
+# Exercise 1 - Find the min, max, sum, and product of c.
+c = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+print(np.sum(c))
+print(np.min(c))
+print(np.max(c))
+print(np.sum(c))
+
+## Exercise 2 - Determine the standard deviation of c.
+c = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+print(np.std(c))
+
+## Exercise 3 - Determine the variance of c.
+c = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+print(np.var(c))
+
+## Exercise 4 - Print out the shape of the array c
+c = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+print(np.shape(c))
+
+# Exercise 5 - Transpose c and print out transposed result
+c = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+print(np.transpose(c))
+
+# Exercise 6 - Multiply c by the c-Transposed and print the result.
+c = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+print(np.transpose(c)*c)
+
+## Exercise 7 - Write the code necessary to sum up the result of c times c transposed. Answer should be 261
+c = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+print(np.sum(np.transpose(c)*c))
+
+# Exercise 8 - Write the code necessary to determine the product of c times c transposed. Answer should be 131681894400.
+
+
+
+## Setup 4
+d = np.array([
+    [90, 30, 45, 0, 120, 180],
+    [45, -90, -30, 270, 90, 0],
+    [60, 45, -45, 90, -45, 180]
+])
+
+# Exercise 1 - Find the sine of all the numbers in d
+
+print(np.sin(d))
+
+# Exercise 2 - Find the cosine of all the numbers in d
+
+print(np.cos(d))
