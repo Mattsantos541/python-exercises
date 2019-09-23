@@ -273,3 +273,16 @@ print(np.sin(d))
 # Exercise 2 - Find the cosine of all the numbers in d
 
 print(np.cos(d))
+
+# Exercise 3 - Find the tangent of all the numbers in d
+print(np.tan(d))
+
+# Exercise 4 - Find all the negative numbers in d
+print(d[d<0])
+
+# Exercise 5 - Find all the positive numbers in d
+print(d[d>0])
+
+# Exercise 6 - Return an array of only the unique numbers in d.
+
+print(np.unique(d))
