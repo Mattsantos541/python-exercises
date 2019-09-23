@@ -71,3 +71,42 @@ a = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 squares_of_a= a**2
 
 print(squares_of_a)
+
+## Setup 2: Consider what it would take to find the sum, min, max, average, sum, product, and list of squares for this list of two lists.
+b = (
+    [3, 4, 5],
+    [6, 7, 8]
+)
+
+np.sum(b)
+np.min(b)
+np.max(b)
+np.product(b)
+(b)
+
+
+# Exercise 1 - refactor the following to use numpy. Use sum_of_b as the variable. **Hint, you'll first need to make sure that the "b" variable is a numpy array**
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+sum_of_b = 0
+for row in b:
+    sum_of_b += sum(row)
+    print(sum_of_b)
+
+# Exercise 2 - refactor the following to use numpy. 
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+min_of_b = min(b[0]) if min(b[0]) <= min(b[1]) else min(b[1])  
+print(min_of_b)
+
+# Exercise 3 - refactor the following maximum calculation to find the answer with numpy.
+b = np.array([
+    [3, 4, 5],
+    [6, 7, 8]]
+)
+max_of_b = max(b[0]) if max(b[0]) >= max(b[1]) else max(b[1])
+print(max_of_b)
