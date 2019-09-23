@@ -286,3 +286,29 @@ print(d[d>0])
 # Exercise 6 - Return an array of only the unique numbers in d.
 
 print(np.unique(d))
+
+
+# Exercise 8 - Print out the shape of d.
+d = np.array([
+    [90, 30, 45, 0, 120, 180],
+    [45, -90, -30, 270, 90, 0],
+    [60, 45, -45, 90, -45, 180]
+])
+print(np.shape(d))
+
+# Exercise 9 - Transpose and then print out the shape of d.
+d = np.array([
+    [90, 30, 45, 0, 120, 180],
+    [45, -90, -30, 270, 90, 0],
+    [60, 45, -45, 90, -45, 180]
+])
+print(np.transpose(d))
+
+# Exercise 10 - Reshape d into an array of 9 x 2
+
+d = np.array([
+    [90, 30, 45, 0, 120, 180],
+    [45, -90, -30, 270, 90, 0],
+    [60, 45, -45, 90, -45, 180]
+])
+np.reshape(d, (9, 2))
