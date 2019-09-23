@@ -91,6 +91,6 @@ plt.show()
 
 ####
 
-#Comine the figures you created in the last step into one figure where each of the 4 equations has a different color for the points. Be sure to include a legend.
+#Combine the figures you created in the last step into one figure where each of the 4 equations has a different color for the points. Be sure to include a legend.
 
 
