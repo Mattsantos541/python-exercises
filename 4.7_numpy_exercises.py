@@ -29,9 +29,10 @@ a = np.array([4, 10, 12, 23, -2, -1, 0, 0, 0, -6, 3, -7])
 a - (a.mean())
 
 #Calculate the z-score for each data point. Recall that the z-score is given by:
+import numpy as np 
 a = np.array([4, 10, 12, 23, -2, -1, 0, 0, 0, -6, 3, -7])
-a1 - (a.mean())
-AZ= a1- (a.std())
+a1 = a- (a.mean())
+AZ= a1/ (a.std())
 print (AZ)
 
 #Numpy extra exercises
@@ -171,7 +172,8 @@ b = np.array([
     [6, 7, 8]]
 )
 
-np.transpose(b)
+b.transpose()
+
 # Exercise 11 - reshape the array b to be a single list of 6 numbers. (1 x 6)
 b = np.array([
     [3, 4, 5],
@@ -186,7 +188,7 @@ b = np.array([
     [6, 7, 8]]
 )
 
-np.reshape(b, (1, 6))
+np.reshape(b, (6, 1))
 
 #Part 3
 # Exercise 1 - Find the min, max, sum, and product of c.
