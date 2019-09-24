@@ -13,10 +13,15 @@ fruits.groupby(fruits).size()
 #E Determine the most frequently occurring fruit name from the series.
 fruits.mode()
 #F Determine the least frequently occurring fruit name from the series.
-fruits.value_counts()
+fruits.value_counts().min()
 #G Write the code to get the longest string from the fruits series.
-
+fruit_names= fruits.value_counts()
+fruit_names = pd.Series(fruit_names)
+fruit_names.str.len().max()
 #H Find the fruit(s) with 5 or more letters in the name.
+
+more_than_5= fruits.apply(lambda x : len(x) >=5)
+fruits[more_than_5]
 #Capitalize all the fruit strings in the series.
 fruits.str.capitalize()
 
