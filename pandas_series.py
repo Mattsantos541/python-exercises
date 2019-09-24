@@ -47,3 +47,19 @@ Numbers= pd.Series(['$796,459.41', '$278.60', '$482,571.67', '$4,503,915.98', '$
                     '$4,513,644.5', '$3,191,059.97', '$1,758,712.24', '$4,338,283.54', '$4,738,303.38', 
                     '$2,791,759.67', '$769,681.94', '$452,650.23'])
 type(Numbers)
+
+#Use series operations to convert the series to a numeric data type.
+
+
+#3
+#What is the minimum exam score? The max, mean, median?
+print(test.mean())
+print (test.max())
+print (test.min())
+print (test.median())
+#Plot a histogram of the scores.
+plt.hist(test)
+plt.show()
+#Convert each of the numbers above into a letter grade. For example, 86 should be a 'B' and 95 should be an 'A'.
+
+#Write the code necessary to implement a curve. I.e. that grade closest to 100 should be converted to a 100, and that many points should be given to every other score as well.
