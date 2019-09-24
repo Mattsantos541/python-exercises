@@ -202,6 +202,7 @@ print(np.sum(c))
 print(np.min(c))
 print(np.max(c))
 print(np.sum(c))
+print(c.prod())
 
 ## Exercise 2 - Determine the standard deviation of c.
 c = np.array([
@@ -229,6 +230,8 @@ c = np.array([
 ])
 
 print(np.shape(c))
+
+
 
 # Exercise 5 - Transpose c and print out transposed result
 c = np.array([
@@ -286,10 +289,7 @@ print(d[d<0])
 print(d[d>0])
 
 # Exercise 6 - Return an array of only the unique numbers in d.
-
-print(np.unique(d))
-
-
+len(np.unique(d))
 # Exercise 8 - Print out the shape of d.
 d = np.array([
     [90, 30, 45, 0, 120, 180],
