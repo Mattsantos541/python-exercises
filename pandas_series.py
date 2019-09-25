@@ -19,7 +19,8 @@ fruit_names= fruits.value_counts()
 fruit_names = pd.Series(fruit_names)
 fruit_names.str.len().max()
 #H Find the fruit(s) with 5 or more letters in the name.
-
+more_than_five_letters = fruits.apply(lambda x: len(x) >= 5)
+fruits[more_than_five_letters]
 more_than_5= fruits.apply(lambda x : len(x) >=5)
 fruits[more_than_5]
 #Capitalize all the fruit strings in the series.
@@ -54,9 +55,16 @@ Numbers= pd.Series(['$796,459.41', '$278.60', '$482,571.67', '$4,503,915.98', '$
 type(Numbers)
 
 #Use series operations to convert the series to a numeric data type.
+Number_new= Numbers.str.strip('$')
+Number_new= Number_new.str.replace(',', "")
+Number_new
 
-
+#Bin the data into 4 equally sized intervals and show how many values fall into each bin.
+pd.cut(Number_new, 4)
+#Plot a histogram of the data. Be sure to include a title and axis labels.
+Number_new.plot.hist()
 #3
+test= pd.array[60, 86, 75, 62, 93, 71, 60, 83, 95, 78, 65, 72, 69, 81, 96, 80, 85, 92, 82, 78]
 #What is the minimum exam score? The max, mean, median?
 print(test.mean())
 print (test.max())
@@ -65,6 +73,7 @@ print (test.median())
 #Plot a histogram of the scores.
 plt.hist(test)
 plt.show()
+
 #Convert each of the numbers above into a letter grade. For example, 86 should be a 'B' and 95 should be an 'A'.
 
 #Write the code necessary to implement a curve. I.e. that grade closest to 100 should be converted to a 100, and that many points should be given to every other score as well.
