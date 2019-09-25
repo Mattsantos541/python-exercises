@@ -42,10 +42,11 @@ fruits.apply(count_vowels)
 
 
 #Write the code to get only the fruits containing "berry" in the name
-
+fruits[fruits.apply]
 #Write the code to get only the fruits containing "apple" in the name
 
 #Which fruit has the highest amount of vowels?
+
 #2
 import pandas as pd
 Numbers= pd.Series(['$796,459.41', '$278.60', '$482,571.67', '$4,503,915.98', '$2,121,418.3', '$1,260,813.3', 
@@ -57,8 +58,8 @@ type(Numbers)
 #Use series operations to convert the series to a numeric data type.
 Number_new= Numbers.str.strip('$')
 Number_new= Number_new.str.replace(',', "")
-Number_new
 
+type(number_new)
 #Bin the data into 4 equally sized intervals and show how many values fall into each bin.
 pd.cut(Number_new, 4)
 #Plot a histogram of the data. Be sure to include a title and axis labels.
@@ -75,5 +76,23 @@ plt.hist(test)
 plt.show()
 
 #Convert each of the numbers above into a letter grade. For example, 86 should be a 'B' and 95 should be an 'A'.
-
+def grades(score):
+    list=[]
+    for x in score:
+        if x >=90:
+            print ("A")
+        elif x>=80:
+            print ("B")
+        elif x>=70:
+            print ("C")
+        elif x>= 60:
+            print ("D")
+        else:
+            print ("F")
+        
+grades(test)
 #Write the code necessary to implement a curve. I.e. that grade closest to 100 should be converted to a 100, and that many points should be given to every other score as well.
+
+#4
+letters= pd.Series("hnvidduckkqxwymbimkccexbkmqygkxoyndmcxnwqarhyffsjpsrabtjzsypmzadfavyrnndndvswreauxovncxtwzpwejilzjrmmbbgbyxvjtewqthafnbkqplarokkyydtubbmnexoypulzwfhqvckdpqtpoppzqrmcvhhpwgjwupgzhiofohawytlsiyecuproguy")
+print(letters)
