@@ -1,7 +1,7 @@
 
 
-"host"= "157.230.209.171"
+host= "157.230.209.171"
 
-"username" = "bayes_824"
+user= "bayes_824"
 
-"password" = "alXk8EcCR6NsQNZwk6hGXAPIYWzx2d8B"
+password = "alXk8EcCR6NsQNZwk6hGXAPIYWzx2d8B"
