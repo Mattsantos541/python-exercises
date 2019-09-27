@@ -30,3 +30,8 @@ roles
 
 pd.merge(users, roles, left_on='role_id', right_on='id', how='outer')
 #3 Getting data from SQL databases
+
+import pandas as pd
+from env import host, user, password
+
+url = f'mysql+pymysql://{user}:{password}@{host}/employees'
