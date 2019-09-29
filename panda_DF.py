@@ -66,4 +66,10 @@ Mammals.describe
 #What is the the weight of the fastest animal?
 Mammals.sort_values(by= "speed")
 #What is the overal percentage of specials?
+mammals[['weight','speed']].sort_values(by='speed',ascending=False).head(1)
+
+sum(mammals.specials==True)/len(mammals)*100
 #How many animals are hoppers that are above the median speed? What percentage is this?
+num_animals=sum((mammals.hoppers == True) & (mammals.speed > mammals.speed.median()))
+print(num_animals)
+print(round(num_animals/len(mammals)*100,2))
