@@ -46,12 +46,18 @@ mpg.rename(columns={'cty': 'city'})
 mpg.rename(columns={'hwy': 'highway'})
 
 #Do any cars have better city mileage than highway mileage?
-
-Create a column named mileage_difference this column should contain the difference between highway and city mileage for each car.
-Which car (or cars) has the highest mileage difference?
-Which compact class car has the lowest highway mileage? The best?
-Create a column named average_mileage that is the mean of the city and highway mileage.
-Which dodge car has the best average mileage? The worst?
+better_mileage = mpg['city']>mpg['highway']
+mpg[better_mileage]
+#Create a column named mileage_difference this column should contain the difference between highway and city mileage for each car.
+mpg[mpg['manufacturer'] == 'dodge'].sort_values(by='average_mileage',ascending=False).head(1)
+mpg[mpg['manufacturer'] == 'dodge'].sort_values(by='average_mileage',ascending=False).tail(1)
+#Which car (or cars) has the highest mileage difference?
+#Which compact class car has the lowest highway mileage? The best?
+mpg['average_mileage']=mpg[['highway','city']].apply(np.mean,axis=1)
+#Create a column named average_mileage that is the mean of the city and highway mileage.
+#Which dodge car has the best average mileage? The worst?
+mpg[mpg['manufacturer'] == 'honda'].sort_values(by='average_mileage',ascending=False).head(1)
+mpg[mpg['manufacturer'] == 'honda'].sort_values(by='average_mileage',ascending=False).tail(1)
 
 # 3 Load the Mammals dataset. Read the documentation for it, and use the data to answer these questions:
 
