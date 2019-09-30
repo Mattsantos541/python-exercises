@@ -43,4 +43,8 @@ sns.relplot(x='Catholic', y='Fertility', data=swiss).set_title('Fertility vs bei
 
 #What measure correlates most strongly with fertility?
 
+#Using the chipotle dataset from the previous exercise, create a bar chart that shows the 4 most popular items and the revenue produced by each.
 
+#Use seaborn to create a line chart of all the individual subject's reaction times and a more prominant 
+#line showing the average change in reaction time.
+sns.lineplot(x="Days", y="Reaction", data=sleepstudy)
