@@ -25,6 +25,22 @@ anscombe.groupby('dataset').describe()
 
 sns.relplot(x='x', y='y', data=anscombe)
 
+##Load the InsectSprays dataset and read it's documentation. Create a boxplot that shows the effectiveness of the different insect sprays.
+sns.boxplot(data=IS, x='count', y='spray')
 
+
+
+#Load the swiss dataset and read it's documentation. Create visualizations to answer the following questions
+
+swiss.describe()
+is_catholic= swiss['Catholic']
+#Create an attribute named is_catholic that holds a boolean value of whether or not the province is Catholic. (Choose a cutoff point for what constitutes catholic
+is_catholic= swiss['Catholic']
+is_catholic >50
+
+#Does whether or not a province is Catholic influence fertility?
+sns.relplot(x='Catholic', y='Fertility', data=swiss).set_title('Fertility vs being Catholic')
+
+#What measure correlates most strongly with fertility?
 
 
