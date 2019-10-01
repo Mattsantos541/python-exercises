@@ -42,9 +42,21 @@ is_catholic >50
 sns.relplot(x='Catholic', y='Fertility', data=swiss).set_title('Fertility vs being Catholic')
 
 #What measure correlates most strongly with fertility?
-
+plt.figure(figsize=(7,7))
+sns.heatmap(swiss.corr(),
+            vmin=-1,
+            cmap='coolwarm',
+            annot=True);
 #Using the chipotle dataset from the previous exercise, create a bar chart that shows the 4 most popular items and the revenue produced by each.
+chipotle['price'] = chipotle['item_price'].apply(lambda x: float(x[1:]))
+revenues = chipotle.groupby('item_name')['price'].sum().sort_values()
 
+top_revenues = pd.Series(revenues.tail(4))
+
+to_bar = pd.DataFrame()
+to_bar['item'] = top_revenues.index
+to_bar['revenue'] = top_revenues.values
+sns.barplot(x='item', y='revenue', data=to_bar)
 #Use seaborn to create a line chart of all the individual subject's reaction times and a more prominant 
 #line showing the average change in reaction time.
 sns.lineplot(x="Days", y="Reaction", data=sleepstudy)
