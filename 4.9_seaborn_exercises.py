@@ -59,6 +59,7 @@ to_bar['revenue'] = top_revenues.values
 sns.barplot(x='item', y='revenue', data=to_bar)
 #Use seaborn to create a line chart of all the individual subject's reaction times and a more prominant 
 #line showing the average change in reaction time.
+sleep= date('sleepstudy')
 sns.lineplot(x="Days", y="Reaction", data=sleepstudy)
 sleep
 sns.set_style('dark')
@@ -69,3 +70,5 @@ sns.set_context(rc={"lines.linewidth": 2})
 sns.lineplot(x='Days', y='Reaction', data=sleep, ci=None)
 # sns.despine()
 plt.show()
+import pandas as pd
+data= pd.read_csv('Social_Network_Ads.csv')
