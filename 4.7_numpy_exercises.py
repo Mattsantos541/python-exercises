@@ -261,7 +261,19 @@ c = np.array([
 print(np.sum(np.transpose(c)*c))
 
 # Exercise 8 - Write the code necessary to determine the product of c times c transposed. Answer should be 131681894400.
+product_transposed_c = np.product(transpose_c)
 
+total_product = product_transposed_c * product_of_c
+print(total_product)
+
+
+d = [
+    [90, 30, 45, 0, 120, 180],
+    [45, -90, -30, 270, 90, 0],
+    [60, 45, -45, 90, -45, 180]
+]
+
+d = np.array(d)
 
 
 ## Setup 4
