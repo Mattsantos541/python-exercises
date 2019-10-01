@@ -48,3 +48,12 @@ sns.relplot(x='Catholic', y='Fertility', data=swiss).set_title('Fertility vs bei
 #Use seaborn to create a line chart of all the individual subject's reaction times and a more prominant 
 #line showing the average change in reaction time.
 sns.lineplot(x="Days", y="Reaction", data=sleepstudy)
+sleep
+sns.set_style('dark')
+sns.set_context(font_scale=1,rc={"grid.linewidth": .5, "axes.linewidth": .5, "ytick.major.width": .5, "xtick.major.width": .5,"lines.linewidth": 0.5})
+palette = sns.color_palette("husl", 18)
+sns.lineplot(x='Days', y='Reaction', hue='Subject', data=sleep, palette=palette)
+sns.set_context(rc={"lines.linewidth": 2})
+sns.lineplot(x='Days', y='Reaction', data=sleep, ci=None)
+# sns.despine()
+plt.show()
